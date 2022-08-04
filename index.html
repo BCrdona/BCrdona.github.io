@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Definiciones entorno de desarrollo web</title>
+    <!--Css bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="container-xl bg">
+        <h1 class="text">Definiciones entorno de desarrollo web</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <h1>La Web como plataforma de desarrollo de software</h1>
+            <div class="col container">La web se podría considerar una plataforma de desarrollo ya que hoy en día se
+                cuentan con varios software subidos a la red en donde ahí mismo se pueden crear sus propios entornos en
+                lenguaje html,php entre otros.</div>
+        </div>
+        <div class="row ">
+            <h1 class="text-center">Protocolo HTTP</h1>
+            <div class="col">
+                <h2>Evolución del HTTP</h2>
+                <p>HTTP fue creado a comienzos de la década de 1990s y ha sido ampliado con nuevas versiones varias
+                    veces. En este artículo se expone la evolución de su desarrollo y las versiones HTTP/0.9, HTTP/1.0,
+                    HTTP/1.1 y la última versión HTTP/2 así como detalles de las funciones que se han ido incluyendo.
+                </p>
+                <p>El protocolo HTTP es un protocolo ampliable, es decir se puede añadir "vocabulario". HTTP está basado
+                    en unos pocos conceptos básicos como el concepto de recursos y URIs, una estructura sencilla de
+                    mensajes, y una arquitectura de cliente-servidor para ordenar el flujo de las comunicaciones. A
+                    demás de estos conceptos, a lo largo de su desarrollo han aparecido otros nuevos y se han añadido
+                    funcionalidades y reglas semánticas, creando nuevos métodos y cabeceras.</p>
+                <p><a href="https://runebook.dev/es/docs/http/basics_of_http/evolution_of_http">mas informacion...</a>
+                </p>
+            </div>
+            <div class="col"><a href="https://developer.mozilla.org/es/docs/Web/HTTP/Overview"><img
+                        src="https://www.e-soluciones-tic.com/wp-content/uploads/protocolo_http.png" align="left"
+                        width="500"></a></div>
+        </div>
+        <div class="row">
+            <h1 align="center">DOM</h1>
+            <p>DOM es una abreviatura de Document Object Model. En español podríamos traducirlo por Modelo de Objeto de
+                Documento, aunque en DesarrolloWeb.com nos hemos referido al DOM habitualmente con el nombre de
+                jerarquía de objetos del navegador, porque realmente es una estructura jerárquica donde existen varios
+                objetos y unos dependen de otros.</p>
+            <p>Los objetos del DOM modelizan tanto la ventana del navegador como el historial, el documento o página
+                web, y todos los elementos que pueda tener dentro la propia página, como párrafos, divisiones, tablas,
+                formularios y sus campos, etc. A través del DOM se puede acceder, por medio de Javascript, a cualquiera
+                de estos elementos, es decir a sus correspondientes objetos para alterar sus propiedades o invocar a sus
+                métodos. Con todo, a través del DOM, queda disponible para los programadores de Javascript, cualquier
+                elemento de la página, para modificarlos, suprimirlos, crear nuevos elementos y colocarlos en la página,
+                etc.</p>
+            <div class="col">
+                <h4>DOM y Compatibilidad con navegadores</h4>
+                <p>Como sabemos los que tenemos una mínima experiencia en la realización de webs, uno de los problemas
+                    más importantes que nos encontramos es que los distintos navegadores interpretan de manera distinta
+                    el mismo código. Eso ocurre con cualquier lenguaje interpretado en el lado del cliente, como HTML,
+                    CSS y Javascript. El problema en cuanto a Javascript es todavía peor, puesto que las diferencias
+                    entre navegadores son muy grandes y también entre versiones de un mismo explorador.</p>
+                <p>Con todo ello, cuando desarrollamos páginas web con el DOM, nos encontramos con graves dificultades
+                    para que un mismo código funcione de igual manera, por lo menos entre los navegadores más comunes.
+                </p>
+                <p>Para solucionarlo en DesarrolloWeb.com hemos visto una serie de técnicas que permiten detectar el
+                    navegador del usuario y según sea este ejecutar unas u otras sentencias. Lamentablemente, todas
+                    estas técnicas no hacen más que complicar el código y el desarrollo de aplicaciones web con
+                    programación del lado del cliente. Para solucionarlo existen librerías o frameworks de Javascript,
+                    los cuales hemos comentado en desarrollo web.com y publicado manuales, que permiten realizar
+                    programación sin tener que preocuparnos por las distintas características de los navegadores, a la
+                    vez que dan un serie de funciones avanzadas para desarrollo de interfaces de una manera sencilla y
+                    rápida.</p>
+            </div>
+            <div class="col">
+                <h4>Estandarización del DOM</h4>
+                <p>Por suerte, de un tiempo para aquí se ha producido un fuerte movimiento de estándares web y el DOM ha
+                    sido uno de los elementos que se han ido estandarizando, de modo que todos los navegadores llevan
+                    hoy una misma dirección, lo que ha redundado en el beneficio de los usuarios, pero sobre todo los
+                    desarrolladores.</p>
+                <p>Es por ello que actualmente es muy viable crear código Javascript nativo, que funciona bien en todos
+                    los navegadores sin necesidad de preguntar constantemente en qué navegador se está ejecutando el
+                    código. Esto ha hecho que sea mucho más sencillo usar Javascript en el trabajo con el cliente y que
+                    sea perfectamente viable trabajar únicamente con el lenguaje, sin necesidad de librerías de
+                    terceros, y recomendable al menos para usos sencillos.</p>
+                <p></p>
+            </div>
+
+        </div>
+        <div align="center"><a href="https://desarrolloweb.com/articulos/historia-estandar-dom.html"><img
+                    src="https://desarrolloweb.com/articulos/images/proceso-dom.gif" width="500"></a></div>
+        <br>
+        <br>
+        <div class="row">
+            <h1 align="center">Servidores Web</h1>
+            <div class="col">
+                <h4>¿Qué es un servidor Web y para qué sirve?</h4>
+                <p>Un servidor web es un software que forma parte del servidor y tiene como misión principal devolver
+                    información (páginas) cuando recibe peticiones por parte de los usuarios.</p>
+                <p>En otras palabras, es el software que permite que los usuarios que quieren ver una página web en su
+                    navegador puedan hacerlo.</p>
+                <img src="https://tudosobrehospedagemdesites.com.br/site/wp-content/uploads/2017/07/servidor-web-2018_destaque.png"
+                    align="center" width="400">
+            </div>
+            <div class="col">
+                <h4>Funcionamiento de un servidor web</h4>
+                <p>Para el funcionamiento correcto de un servidor web necesitamos un cliente web que realice una
+                    petición http o https a través de un navegador como Chrome, Firefox o Safari y un servidor donde
+                    esté almacenada la información.</p>
+                <p>El proceso sería el siguiente:</p>
+                <ul>
+                    <li>Tras la primera consulta por parte del usuario hacia una web, se establece una conexión entre el
+                        servidor DNS y el ordenador que realiza la consulta o petición. Este servidor DNS responde con
+                        la dirección IP correcta del servidor web donde está alojado el contenido solicitado.</li>
+                    <li>El siguiente paso sería solicitar el contenido al servidor web mediante el protocolo HTTP/HTTPS.
+                    </li>
+                    <li>Una vez que el servidor web ha recibido la solicitud del contenido solicitado por el cliente
+                        web, deberá procesar la solicitud hasta encontrar el contenido solicitado dentro del dominio
+                        correspondiente.</li>
+                    <li>Envía el contenido solicitado al cliente web que lo solicitó.</li>
+                </ul>
+            </div>
+        </div>
+        <h1>Tipos de servidores Web</h1>
+        <div class="row">
+            <div class="col">
+                <h2>Servidor HTTP Apache</h2>
+                <p>El servidor HTTP Apache es un software de código abierto y gratuito, que durante años ha sido el
+                    software más utilizado por los servidores web, rivalizando actualmente con Nginx.</p>
+                <p>Además destaca por ser multiplataforma, siendo compatible con sistemas operativos como Linux, Window,
+                    IOS, Unix, etc.</p>
+                <p><a href="https://www.webempresa.com/hosting/que-es-servidor-apache.html">mas..</a></p>
+                <img src="https://axarnet.es/images/blog/como-optimizar-un-servidor-apache-axarnet.jpg" align="left"
+                    width="500">
+            </div>
+            <div class="col">
+                <h2>Servidor Nginx</h2>
+                <p>Al igual que con Apache estaríamos ante un software de código abierto y multiplataforma compatible
+                    con Window, IOS, Linux, etc. Tiene una versión de pago además de la gratuita.</p>
+                <p>Este tipo de servidor web es conocido por su buen funcionamiento cuando tiene que gestionar un número
+                    alto de visitas simultáneas, ya que los usuarios no perciben retraso en la carga de la página aunque
+                    se esté produciendo ese acceso concurrente.</p>
+                <p>Actualmente es el software para servidores web más usado en el mundo.</p>
+                <p>Webempresa trabaja en sus servidores con una combinación de Nginx y Apache, aprovechando las ventajas
+                    de ambos para ofrecer un rendimiento óptimo de carga incluso cuando una Web recibe un volumen alto
+                    de visitas.</p>
+                <p><a href="https://www.webempresa.com/hosting/nginx-que-es.html">mas...</a></p>
+                <img src="https://rockcontent.com/es/wp-content/uploads/sites/3/2020/05/nginx1-1024x596.png"
+                    align="left" width="500">
+            </div>
+            <div class="col">
+                <h2>LiteSpeed</h2>
+                <p>LiteSpeed nació como sustituto de Apache, para mejorar el rendimiento del servidor web en entornos de
+                    alto tráfico.</p>
+                <p>Tiene una versión gratuita y otra de pago al igual que Nginx.</p>
+                <p>LiteSpeed puede ser utilizado como reemplazo directo de Apache, ya que ofrece compatibilidad con los
+                    archivos .htaccess y las aplicaciones web diseñadas para Apache.</p>
+                <p>En la actualidad los tests de rendimiento no señalan una mejora al respecto de Nginx.</p>
+                <p><a
+                        href="https://www.redeszone.net/tutoriales/servidores/hosting-litespeed-mejorar-velocidad-web/">mas...</a>
+                </p>
+                <img src="https://www.litespeedtech.com/images/hero/lsws-v6a.png" align="left" width="500">
+            </div>
+            <div class="col">
+                <h2>Servidor Microsoft IIS</h2>
+                <p>Este tipo de servidor web está desarrollado por Microsoft y, en el caso de que se necesite integrar
+                    herramientas de Microsoft, sería una alternativa recomendable por la compatibilidad que
+                    obtendríamos.</p>
+                <p>Se ejecuta con Windows gracias a la tecnología IIS (Internet Information Services) y es compatible
+                    con páginas programadas en ASP (Active Server Pages) o .NET, a diferencia del resto de servidores
+                    web compatibles con Linux.</p>
+                <p><a href="https://blog.infranetworking.com/servidor-iis/">mas...</a></p>
+                <img src="data:image/png;base64,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"
+                    align="left" width="500">
+            </div>
+            <div class="col">
+                <h2>Sun Java System Web Server</h2>
+                <p>Este tipo de servidor está pensado para programadores que trabajan con Java, Python o Ruby.</p>
+                <p>Es un servidor web creado para soportar una gran carga de trabajo con tecnologías muy específicas
+                    como Java.</p>
+                <p>Si no se dispone de conocimientos avanzados en administración de sistemas no sería una opción
+                    recomendada.</p>
+                <p><a
+                        href="http://virtual.vtt.fi/virtual/proj2/ubibox/index_es.html#:~:text=Sun%20Java%E2%84%A2%20System%20Web,una%20mejor%20calidad%20de%20servicio.">mas...</a>
+                </p>
+                <img src="data:image/png;base64,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"
+                    align="left" width="500">
+            </div>
+        </div>
+        <div class="row">
+            <h1 align="center">Herramientas de desarrollo</h1>
+            <p>Una herramienta de desarrollo web es algo que te ayuda a conseguir los objetivos de tu proyecto de forma
+                enfocada. Aunque esto no incluye los lenguajes de programación individuales,
+                hay subconjuntos, superconjuntos y marcos como TypeScript que se sitúan en la línea.</p>
+            <p>
+            <ul>
+                <h3>Tipos de herramientas de desarrollo web </h3>
+                <li>Entornos de desarrollo local</li>
+                <li>Editores de texto y código </li>
+                <li>Herramientas de diseño web y creación de prototipos </li>
+                <li>Git Clients </li>
+                <li>Herramientas para desarrolladores de navegadores </li>
+                <li>Frontend Frameworks </li>
+                <li>Frameworks para Aplicaciones Web </li>
+                <li>TypeScript </li>
+                <li>Sistemas de Gestión de Paquetes </li>
+                <li>API y herramientas de prueba </li>
+                <li>Herramientas de colaboración</li>
+                <li>Ejecutores de tareas </li>
+                <li>Herramientas de contenedor </li>
+                <li>Herramientas de optimización de imágenes </li>
+                <li>Herramientas de pruebas de sitios web </li>
+                <li>Stack Overflow y los motores de búsqueda</li>
+                <li>Referencias de desarrollo web </li>
+            </ul>
+            </p>
+            <h2 align="center">Editores de texto y código</h2>
+            <div class="col">
+                <h4>Froala</h4>
+                <p>Fróala es el editor HTML WYSIWYG de próxima generación, que es fácil de integrar para los
+                    desarrolladores, y su diseño limpio te hace sentir excelente. Ofrece un editor de texto JS de alto
+                    rendimiento que es fácil de usar para los desarrolladores.</p>
+                <p>Froala tiene más de 170 bloques de diseño basados en Bootstrap para ayudarlo a crear hermosos sitios
+                    web modernos. Puede usarlo de forma gratuita en sus proyectos móviles y web. Además, la poderosa API
+                    está diseñada para hacer que el editor de texto sea fácil de interactuar y personalizar. redactor de
+                    Froala está disponible en todos los marcos y admite tecnologías de back-end que facilitan aún más el
+                    trabajo de los desarrolladores.</p>
+                <img src="https://cdn.hackernoon.com/images/Hcp7GOWt9sT1u05G6yNtUCn7pia2-sv135vs.jpeg" align="left"
+                    width="500">
+            </div>
+            <div class="col">
+                <h4>UltraEdit</h4>
+                <p>UltraEdit es un editor de texto potente, altamente seguro y flexible disponible para Mac, Linux y
+                    Windows. Sus funciones de edición de texto hacen que la edición de columnas y listas sea una
+                    experiencia emocionante. Obtenga funciones como edición de columnas / bloques, edición de múltiples
+                    signos de intercalación y más, comportándose en ambos sentidos cuando necesite que funcione como un
+                    cursor múltiple o una potencia sencilla.</p>
+                <p>Siempre está listo para cualquier sesión de codificación con sus scripts, plantillas de macros,
+                    plantillas inteligentes, herramientas personalizadas, cliente telnet / SSH integrado y más. Un
+                    programador o desarrollador puede beneficiarse de una potencia insuperable, carga de archivos,
+                    rendimiento, temas configurables, integración del sistema operativo y mucho más. De manera similar,
+                    una empresa o corporación obtendrá herramientas confiables, probadas, confiables y estables.</p>
+                <img src="https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/c50022a6-96d9-11e6-ab78-00163ed833e7/3828677119/ultraedit-screenshot.png"
+                    align="left" width="500">
+            </div>
+            <div class="col">
+                <h4>Visual Studio Code</h4>
+                <p>También conocido como VS Code, es un editor de código de fuente abierta de Microsoft. Es un editor de
+                    texto multiplataforma que puede ejecutarse en cualquier dispositivo, ya sea en Linux, Windows o Mac.
+                </p>
+                <p>Este editor de texto está enfocado a incrementar el desempeño del desarrollador. Funciones como la
+                    finalización automática y la depuración del sistema ayudan a mejorar las tareas diarias del
+                    desarrollador.</p>
+                <p>VS Code tiene un terminal integrado y soporte Git integrado, lo que hace de este editor de texto uno
+                    de los mejores editores de texto del mercado. Se puede personalizar de acuerdo a sus necesidades. A
+                    través de las extensiones de VS Code, puede instalar muchas funciones y puede realizar todos los
+                    trabajos que se pueden realizar en un IDE.</p>
+                <img src="https://code.visualstudio.com/opengraphimg/opengraph-home.png" align="left" width="500">
+            </div>
+            <div class="col">
+                <h4>Brackets</h4>
+                <p>Es un editor de texto moderno, ligero y de código abierto, pero potente. Los soportes comprenden el
+                    diseño web que facilita el diseño en el navegador con herramientas visuales enfocadas y
+                    compatibilidad con preprocesadores. Está diseñado desde cero para diseñadores web y desarrolladores
+                    front-end.</p>
+                <p>Una de las mejores características de Bracket es que tiene un servidor de vista previa en vivo
+                    integrado que inicia una nueva pestaña de Chrome que muestra la página actual, y que no requiere una
+                    actualización manual cuando cambia un archivo y mientras escribe.</p>
+                <p>Otra característica es que JS lint está habilitado de forma predeterminada entre paréntesis que
+                    verificará su código Javascript al guardar, con sus resultados mostrados como un panel debajo de la
+                    ventana de edición principal.</p>
+                <img src="https://i.ytimg.com/vi/l1I-HFzaAHk/maxresdefault.jpg" align="left" width="500">
+            </div>
+            <div class="col">
+                <h4>Sublime Text</h4>
+                <p>Es una aplicación liviana que facilita a los desarrolladores trabajar en ella y, a pesar de ser
+                    liviana, es mucho más liviana en la cantidad de funciones que ofrece. Se construyó principalmente
+                    con una API de Python para los equipos de desarrollo que hoy están dedicando horas a codificar.</p>
+                <p>Tiene varios atajos de teclado, lo que lo hace más flexible para que el desarrollador use las
+                    diferentes funciones. Es compatible con la integración multiplataforma y se ha optimizado para una
+                    velocidad rápida y una interfaz fácil de usar. Está disponible por un período de prueba gratuito,
+                    después del cual los desarrolladores deben pagar $ 80.</p>
+                <img src="https://www.sublimetext.com/images/og-full.jpg" align="left" width="500">
+            </div>
+            <div class="col">
+                <h4>Atom Editor</h4>
+                <p>Atom es un editor de texto y código de fuente abierta para Linux, Mac OS y Microsoft Windows. Atom
+                    admite Git Control integrado y los complementos escritos en JavaScript. </p>
+                <p>Una de las características sobresalientes de Atom es que le permite compartir el progreso de su
+                    proyecto con amigos. El uso de Teletype for Atom (desde compartir conocimientos hasta enseñar)
+                    permitirá a los desarrolladores trabajar juntos en el mismo proyecto. Una de las cosas difíciles
+                    para los desarrolladores es colaborar mientras trabajan en las mismas ideas. Atom habilita esta
+                    operación directamente desde su editor de texto.</p>
+                <p>Puede personalizar Atom de cualquier manera según sus requisitos. En Atom, todo se puede personalizar
+                    mediante CSS o JavaScript. Si desea una función que no existe, es fácil comenzar a escribir su
+                    paquete.</p>
+                <img src="https://i.ytimg.com/vi/1D848uQx0Fc/hqdefault.jpg" align="left" width="500">
+            </div>
+            <div class="col">
+                <h4>Notepad++</h4>
+                <p>notepad ++ es un editor de código ligero y de código abierto. Es un reemplazo del Bloc de notas que
+                    admite varios idiomas. Es fácil de usar y consume muy poca potencia de CPU. Las herramientas
+                    proporcionadas en él son útiles para diseñadores web y desarrolladores de aplicaciones para el
+                    usuario.</p>
+                <p>Notepad ++ ofrece resaltado de sintaxis, autocompletado, codificación de colores, numeración de
+                    líneas, edición de múltiples documentos y acercar y alejar. Está disponible solo en Windows.</p>
+                <img src="https://enemaneiras.com.br/wp-content/uploads/2021/07/modo-escuro-notepad-plus-plus.jpg"
+                    align="left" width="500">
+            </div>
+            <div class="col">
+                <h4>Light Table</h4>
+                <p>Es un editor de código de fuente abierta. Es liviano, su diseño de GUI es impecable y también se
+                    puede personalizar fácilmente. Podemos usar gráficos, juegos o cualquier cosa en la mesa de luz
+                    incrustándolos.</p>
+                <p>Las características de Light Table son su instalación liviana, interfaz minimalista, resaltado de
+                    sintaxis, validación de código en línea, autocompletado, administrador de complementos y temas.</p>
+                <img src="https://ubunlog.com/wp-content/uploads/2017/12/about-Light-Table.jpg" align="left"
+                    width="500">
+            </div>
+            <div class="col">
+                <h4>Bluefish</h4>
+                <p>Bluefish es un potente editor de texto y código dirigido a programadores y desarrolladores web, con
+                    muchas opciones para desarrollar sitios web, scripts y código de programación. Bluefish admite
+                    muchos lenguajes de programación y de marcado. Bluefish es compatible con todas las plataformas
+                    Windows, Mac OS y Linux.</p>
+                <p>Admite múltiples interfaces de documentos, múltiples proyectos, búsqueda y reemplazo potentes,
+                    apertura de archivos recursiva, soporte multiproceso para archivos remotos, edición de pantalla
+                    completa, personalización para el lenguaje de programación, codificación Zen, múltiples soportes de
+                    codificación, funcionalidad ilimitada de rehacer / deshacer, descarga del sitio / upload y corrector
+                    ortográfico en línea. También es compatible con casi todos los lenguajes de programación.</p>
+                <img src="https://mintguide.org/wp-content/uploads/posts/2017-01/1484739153_linux_mint_002.jpg"
+                    align="left" width="500">
+            </div>
+            <div class="col">
+                <h4>Komodo Edit</h4>
+                <p>Komodo editar es otro editor de texto muy popular para que los desarrolladores construyan entractive
+                    y aplicaciones excepcionales de Windows, Linux y Mac OS. Esta plataforma cuenta con potentes
+                    opciones de extensión para una codificación mejor y más cómoda.</p>
+                <p>Es uno de los mejores editores de texto gratuitos disponibles en Internet. Komodo Edit puede ser una
+                    plataforma perfecta para sus tareas de diseño web, ya que admite una amplia gama de lenguajes de
+                    script.</p>
+                <p>Como la mayoría de los editores, Komodo Edit también proporciona características esenciales que
+                    brindan una mejor experiencia de programación, como UI personalizable, edición de múltiples
+                    ventanas, vista dividida y funciones de autocompletar.</p>
+                <img src="https://static.filehorse.com/screenshots/developer-tools/komodo-edit-screenshot-01.png"
+                    align="left" width="500">
+            </div>
+            <div class="col">
+                <h4>Vim</h4>
+                <p>Es multiplataforma y uno de los editores de texto favoritos de los desarrolladores. Con soporte para
+                    Linux, Windows y Mac, el Editor de texto Vim es un editor estable y confiable que integra muchas
+                    herramientas populares. Puede usar Vim como una interfaz de línea de comandos (CLI) y una interfaz
+                    gráfica de usuario independiente.</p>
+                <p>El editor de código tiene una comunidad grande y dedicada de sus usuarios que crean actualizaciones
+                    útiles y nuevos scripts para la plataforma. Vim es extensible y personalizable.</p>
+                <img src="https://i.emezeta.com/weblog/vim.png" align="left" width="500">
+            </div>
+            <div class="col">
+                <h4>NetBeans</h4>
+                <p>NetBeans es uno de los editores de código más populares y potentes utilizados por los diseñadores
+                    web. Tiene muchas características únicas que ofrecen la mayoría de los editores. Como la mayoría de
+                    los editores de texto, NetBeans también es una aplicación gratuita y de código abierto.</p>
+                <p>Es una aplicación útil que se puede utilizar para desarrollar varias aplicaciones de escritorio,
+                    aplicaciones móviles o aplicaciones web. NetBeans admite muchos lenguajes de programación, incluidos
+                    PHP, C ++, JavaScript y muchos más.</p>
+                <p>El editor de texto NetBeans también está disponible para Mac OS, Windows y Linux. El NetBeans IDE
+                    también es un tremendo Angular JS IDE y una herramienta fantástica para trabajar con Node.js.</p>
+                <img src="https://cdn.tgdd.vn//GameApp/-1//netbeans-82-800x450.jpg" align="left" width="500">
+            </div>
+        </div>
+        <div class="row">
+            <h1 align="center">Modelo de cajas del explorador</h1>
+            <div class="col"><img
+                    src="https://www.oscarblancarteblog.com/wp-content/uploads/2017/10/MoxModel-secciones.png"
+                    align="left" width="500"> </div>
+            <div class="col">
+                <p>En CSS, en general, hay dos tipos de cajas: cajas en bloque y cajas en línea. Estas características
+                    se
+                    refieren al modo como se comporta la caja en términos de flujo de página y en relación con otras
+                    cajas
+                    de la página:
+                    Si una caja se define como un bloque, se comportará de las maneras siguientes:</p>
+                <p>
+                <ol>
+                    <li>La caja fuerza un salto de línea al llegar al final de la línea.</li>
+                    <li>La caja se extenderá en la dirección de la línea para llenar todo el espacio disponible que haya
+                        en su contenedor. En la mayoría de los casos, esto significa que la caja será tan ancha como su
+                        contenedor, y llenará el 100% del espacio disponible.</li>
+                    <li>Se respetan las propiedades width y height.</li>
+                    <li>El relleno, el margen y el borde mantienen a los otros elementos alejados de la caja.</li>
+                </ol>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <h1 align="center">Estándares HTML</h1>
+            <p>Existen múltiples estándares HTML (HTML 4.01, XHTML 1.0, HTML 5, ...). Al principio del documento debe
+                indicársele al navegador qué versión se va a utilizar, ya que cada una de ellas tiene unas reglas
+                distintas para interpretar las etiquetas.</p>
+            <p>Si no se le indica al navegador el estándar que se está usando o si se le indica uno pero no se siguen
+                correctamente las normas del mismo, el navegador intenta interpretar lo que se quería hacer. El problema
+                de esto es que cada navegador
+                trata de interpretarlo a su manera y puede llegar a conclusiones distintas. Por eso se deben usar los
+                estándares: si sigues el estándar todos los navegadores saben lo que quieres hacer, no tienen que
+                procurar adivinarlo.</p>
+            <div class="col">
+                <h3>HTML SEMÁNTICO</h3>
+                <p>Las etiquetas HTML no le dicen al navegador la apariencia que deben tener los elementos dentro de la
+                    página web, solamente señalan cúal es su función. La mayoría de los navegadores muestran los
+                    elementos de una forma similar; por ejemplo, un encabezado h1 se mostrará en letra grande y en
+                    negrita en casi todos los navegadores.</p>
+            </div>
+            <div class="col">
+                <h3>ACCESIBILIDAD WEB</h3>
+                <p>La WAI publicó una serie de directrices denominadas Pautas de Accesibilidad para el Contenido Web 1.0
+                    (WCAG10)que son en las que se basan la mayoría de las páginas web. Estas pautas se dividen en tres
+                    niveles de prioridad y, según el cumplimiento de estas directrices, existen los siguientes niveles
+                    de conformidad:
+                    <br> Nivel A: directrices de prioridad 1, sin las cuales algunos usuarios no podrían acceder a la
+                    información de la página web
+                    <br> Nivel AA: directrices de prioridad 1 y 2, sin las cuales algunos usuarios tendrían muy difícil
+                    acceder a la información de la página web
+                    <br> Nivel AAA: directrices de prioridad 1, 2 y 3, sin las cuales algunos usuarios tendrían ciertas
+                    dificultades para acceder a la información de la página web
+                </p>
+            </div>
+            <div class="col">
+                <h3>USABILIDAD</h3>
+                <p>Algunas de las reglas generales para mejorar la usabilidad de una página web son:
+                <ol>
+                    <li>Texto de tamaño adecuado y con buen contraste con el fondo, para hacer la lectura lo más
+                        cómoda posible</li>
+                    <li>No poner elementos animados o parpadeantes ya que distraen la atención del usuario</li>
+                    <li>Poner texto que identifique claramente el destino de los enlaces (no poner "pinche aquí")
+                    </li>
+                    <li>No debe aparecer la barra de desplazamiento horizontal</li>
+                    <li>El diseño debe ser consistente (las distintas zonas de navegación y contenidos deber ir
+                        aproximadamente en el mismo lugar) en todas las páginas del sitio web</li>
+                    <li>Los contenidos deben ser claros y concisos, usando el mismo lenguaje que el usuario, no un
+                        lenguaje institucional o empresarial</li>
+                </ol>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <h1 align="center">Estándares CSS</h1>
+            <p>El CSS (hojas de estilo en cascada) es un lenguaje que define la apariencia de un documento escrito en un
+                lenguaje de marcado (por ejemplo, HTML). Así, a los elementos de la
+                página web creados con HTML se les dará la apariencia que se desee utilizando CSS: colores, espacios
+                entre elementos, tipos de letra, ... separando de esta forma la estructura de la presentación.</p>
+            <p>Esta separación entre la estructura y la presentación es muy importante, ya que permite que sólo
+                cambiando los CSS se modifique completamente el aspecto de una página web.
+                Esto posibilita, entre otras cosas, que los usuarios puedan usar hojas de estilo personalizadas (como
+                hojas de estilo de alto contraste o de accesibilidad).</p>
+            <p>El W3C define las especificaciones del estándar CSS. Después, los navegadores intentan implementar esas
+                especificaciones, para que las páginas web se vean igual en todos ellos.</p>
+            <p>Los navegadores cada vez cumplen más y mejor el estándar CSS. Por ejemplo: Internet Explorer 6 cumplía el
+                estándar en sólo un 12% mientras que Internet Explorer 9 lo cumple en
+                un 95%. Por eso se deben maquetar las páginas web siguiendo el estándar CSS y no las especificaciones de
+                un navegador determinado. También hay que procurar mantener actualizado
+                el navegador, ya que a medida que van cumpliendo el estándar, van añadiendo funcionalidades que antes no
+                tenían.</p>
+            <h3>SASS(SCSS)</h3>
+            <ul>
+                <li>Sass significa Hoja de estilo sintácticamente impresionante</li>
+                <li>Sass es una extensión de CSS</li>
+                <li>Sass es un preprocesador de CSS</li>
+                <li>Sass es completamente compatible con todas las versiones de CSS</li>
+                <li>Sass reduce la repetición de CSS y, por lo tanto, ahorra tiempo</li>
+                <li>Sass fue diseñado por Hampton Catlin y desarrollado por Natalie Weizenbaum en 2006</li>
+                <li>Sass es gratis para descargar y usar</li>
+            </ul>
+            <div class="row">
+
+                <div class="col-sm">
+                    SASS
+                    <div class="border">$bg-color: #df0174
+                        <br> $size: 1em
+                        <br> body
+                        <br> background-color: $bg-color
+                        <br> margin: $size * 2
+                    </div>
+
+                </div>
+                <div class="col-sm">
+                    SCSS
+                    <div class="border">$bg-color: #df0174;
+                        <br>$size: 1em;
+                        <br> body {
+                        <br> background-color: $bg-color;
+                        <br> margin: $size * 2;
+                        <br> }
+                    </div>
+                </div>
+                <div class="col-sm">
+                    CSS
+                    <div class="border">body {
+                        <br> background-color: #df0174;
+                        <br> margin: 2em;
+                        <br> }
+                    </div>
+                </div>
+            </div>
+            <p>SASS conoce numerosas funciones que facilitan el trabajo en la hoja de estilo. Se trata de workflows
+                predefinidos que evitan tener que ejecutarlos manualmente. Las funciones pueden asignarse a diferentes
+                categorías:</p>
+            <ol>
+                <li>Colores: con estas funciones pueden ajustarse los valores de color, la saturación, la transparencia
+                    y muchas
+                    otras propiedades. Con mix(), p.ej., pueden mezclarse dos colores y crear uno nuevo.</li>
+                <li>Listas: en las listas (series de valores de propiedad CSS) las funciones sirven para leer el número
+                    de
+                    entradas o fusionar varias listas en una sola.</li>
+                <li>Cadenas: las strings son cadenas fijas de caracteres, como las que se utilizan en los textos. Las
+                    funciones
+                    de esta categoría pueden colocar una cadena de caracteres entre comillas o convertir un texto
+                    completo a
+                    mayúsculas.</li>
+                <li>Selectores: con las funciones de esta categoría se manipulan selectores completos. Con
+                    selector-unify()
+                    puedes fusionar dos selectores en uno solo (ahorrando mucha escritura).</li>
+                <li>Números: dentro del tema de los números, valores o unidades, encontrarás funciones que pueden, entre
+                    otras
+                    cosas, redondear hacia arriba y hacia abajo, buscar el número más grande de un conjunto o entregar
+                    un número
+                    aleatorio.</li>
+                <li>Mapas: los mapas en SASS son estructuras de datos compuestas de claves y propiedades. Con las
+                    funciones
+                    adecuadas, estos conjuntos de datos pueden manipularse fusionando dos mapas o borrando una clave de
+                    un mapa.
+                </li>
+                <li>Introspección: estas funciones permiten revisar el contenido de la hoja de estilo completa para
+                    comprobar,
+                    entre otras cosas, si en el código se encuentra una característica determinada, un mixin o una
+                    función en
+                    concreto. </li>
+                <li>Miscellaneous: en el punto miscelánea SASS también incluye la útil función if() –que no debe
+                    confundirse con
+                    la directiva del mismo nombre. La diferencia se explica más abajo en el punto “Ramificación”.</li>
+            </ol>
+        </div>
+        <div class="row">
+            <h1>Fundamentos de compatibilidad entre dispositivos</h1>
+            <p>Actualmente contamos con una serie de dispositivos variados como celulares, tables y computadoras, para
+                lograr visualizar las paginas en ellos se cuenta con frameworks de trabajo como Bootstrap, Angular.</p>
+            <p>No todos los navegadores son capaces de interpretar el código HTML de la forma esperada, al desarrollar
+                tenemos que considerar esta característica para lograr la mayor compatibilidad posible con los
+                navegadores mas utilizados, este es uno de los objetivos de HTML 5.</p>
+            <p>Por ejemplo se tiene la siguiente tabla respecto a los valores de adaptabilidad de los contenedores por
+                parte de bootstrap</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Breakpoint</th>
+                        <th>Class infix</th>
+                        <th>Dimensions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Extra small</td>
+                        <td>None</td>
+                        <td>&lt;576px</td>
+                    </tr>
+                    <tr>
+                        <td>Small</td>
+                        <td>sm</td>
+                        <td>≥576px</td>
+                    </tr>
+                    <tr>
+                        <td>Medium</td>
+                        <td>md</td>
+                        <td>≥768px</td>
+                    </tr>
+                    <tr>
+                        <td>Large</td>
+                        <td>lg</td>
+                        <td>≥992px</td>
+                    </tr>
+                    <tr>
+                        <td>Extra large</td>
+                        <td>xl</td>
+                        <td>≥1200px</td>
+                    </tr>
+                    <tr>
+                        <td>Extra extra large</td>
+                        <td>xxl</td>
+                        <td>≥1400px</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <div class="container"><iframe width="1000" height="600"
+                src="https://www.youtube.com/embed/PcXEuGZq4dY?clip=UgkxN6b6luOWJZezC85nEF73csGwBOyy08Qf&amp;clipt=EKrrEBifwxM"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe></div>
+        <div class="row">
+            <h1>Formularios y sus componentes</h1>
+            <p>Se utiliza un formulario HTML para recopilar la entrada del usuario. La entrada del usuario se envía con
+                mayor frecuencia a un servidor para su procesamiento.</p>
+            <div class="col-6">
+                <h4>INPUT</h4>
+                <p>El elemento HTML &lt;input&gt; es el elemento de formulario más utilizado.
+                    Un &lt;input&gt; elemento se puede mostrar de muchas maneras,según el type atributo.</p>
+                <h4>Label</h4>
+                <p>El &lt;label&gt; elemento es útil para los usuarios de lectores de pantalla, porque el lector de
+                    pantalla leerá en voz alta la etiqueta cuando el usuario se centre en el elemento de entrada.</p>
+                <p>Ejemplo</p>
+                <p>
+                    &lt;form&gt;
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="fname"&gt;Nombre de pila:&lt;/label&gt;&lt;br&gt;
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="lname"&gt;Apellido:&lt;/label&gt;&lt;br&gt;
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="lname" name="lname"&gt;
+                    <br> &lt;/form&gt;
+                </p>
+            </div>
+            <div class="col-6">
+                <br>
+
+                <br><br><br>
+                <h5>Ejecucion del ejemplo</h5><br><br>
+                <form>
+                    <label for="fname">Nombre de pila:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Apellido:</label><br>
+                    <input type="text" id="lname" name="lname">
+                </form>
+            </div>
+            <div class="col-6">
+                <h4>Radio Buttons</h4>
+                <p>&lt;input type="radio"&gt;define un botón de opción.
+                    Los botones de opción le permiten al usuario seleccionar UNA de un número limitado de opciones.
+                </p>
+                <p>Ejemplo</p>
+                <p>
+                    &lt;p&gt;Escoje tu lenguaje Web favorito:&lt;/p&gt;
+                    <br>
+                    <br>&lt;form&gt;
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="radio" id="html" name="fav_language"
+                    value="HTML"&gt;
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="html"&gt;HTML&lt;/label&gt;&lt;br&gt;
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="radio" id="css" name="fav_language"
+                    value="CSS"&gt;
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="css"&gt;CSS&lt;/label&gt;&lt;br&gt;
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="radio" id="javascript" name="fav_language"
+                    value="JavaScript"&gt;
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="javascript"&gt;JavaScript&lt;/label&gt;
+                    <br>&lt;/form&gt;
+                </p>
+
+            </div>
+            <div class="col-6">
+
+                <br><br><br><br>
+                <h5>Ejecucion del ejemplo</h5>
+                <p>Escoje tu lenguaje Web favorito:</p>
+
+                <form>
+                    <input type="radio" id="html" name="fav_language" value="HTML">
+                    <label for="html">HTML</label><br>
+                    <input type="radio" id="css" name="fav_language" value="CSS">
+                    <label for="css">CSS</label><br>
+                    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                    <label for="javascript">JavaScript</label>
+                </form>
+            </div>
+            <div class="col-6">
+                <h4>Checkboxes</h4>
+                <p>define &lt;input type="checkbox"&gt; una casilla de verificación .
+                    Las casillas de verificación permiten al usuario seleccionar CERO o MÁS opciones de un número
+                    limitado de opciones.
+                </p>
+                <p>Ejemplo</p>
+                <p>
+                    &lt;form&gt;
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="checkbox" id="vehicle1" name="vehicle1"
+                    value="Bike"&gt;
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="vehicle1"&gt; Tengo una
+                    bicicleta&lt;/label&gt;&lt;br&gt;
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="checkbox" id="vehicle2" name="vehicle2"
+                    value="Car"&gt;
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="vehicle2"&gt; tengo un
+                    carro&lt;/label&gt;&lt;br&gt;
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="checkbox" id="vehicle3" name="vehicle3"
+                    value="Boat"&gt;
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="vehicle3"&gt; tengo un barco&lt;/label&gt;
+                    <br>&lt;/form&gt;
+                </p>
+            </div>
+            <div class="col-6">
+                <br><br><br><br>
+                <h5>Ejecucion del ejemplo</h5>
+                <form>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> Tengo una bicicleta</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> tengo un carro</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> tengo un barco</label>
+                </form>
+            </div>
+            <div class="col-6">
+                <h4>Submit Button</h4>
+                <p>Define un botón para enviar los &lt;input type="submit"&gt; datos del formulario a un controlador de
+                    formulario.
+                    El controlador de formulario suele ser un archivo en el servidor con un script para procesar los
+                    datos de entrada.
+                    El controlador de formulario se especifica en el action atributo del formulario.</p>
+                    <p>Ejemplo</p>
+                <p>
+                    &lt;form action=""&gt;
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="fname"&gt;Nombre de pila:&lt;/label&gt;&lt;br&gt;
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="fname" name="fname" value="Bryan"&gt;&lt;br&gt;
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="lname"&gt;Apellido:&lt;/label&gt;&lt;br&gt;
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="lname" name="lname" value="Cardona"&gt;&lt;br&gt;&lt;br&gt;
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="submit" value="Submit"&gt;
+                    <br>&lt;/form&gt;
+                </p>
+            </div>
+            <div class="col-6">
+                <br><br><br><br>
+                <p>Ejecucion del ejemplo</p>
+                <form action="">
+                    <label for="fname">Nombre de pila:</label><br>
+                    <input type="text" id="fname" name="fname" value="Bryan"><br>
+                    <label for="lname">Apellido:</label><br>
+                    <input type="text" id="lname" name="lname" value="Cardona"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer align="center">
+        <h5>5390-18-1524 Bryan Antonio Cardona Donis</h5>
+        <p>Desarrollo web 2022</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
